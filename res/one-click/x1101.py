@@ -184,6 +184,7 @@ def custom_download(custom_dirs, user_header, api_key):
 
         for url in urls:
             url = url.strip()  # Remove leading/trailing whitespaces from each URL
+            cprint(url)
             if url != "":
                 print_line(0, color="green")
                 if "|" in url:
